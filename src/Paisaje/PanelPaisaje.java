@@ -105,48 +105,6 @@ public class PanelPaisaje extends JPanel {
         grafica.fillRoundRect(148, 245, 50, 75, 10, 10);
 
 
-//        //rectangulo
-//        grafica.setColor(Color.BLUE);
-//        grafica.drawRect(50, 100, 150, 160);
-//
-//        //rectangulo rfelleno
-//        grafica.setColor(Color.ORANGE);
-//        grafica.fillRect(100, 300, 100, 100);
-//
-//
-//        //circulo
-//        grafica.setColor(Color.black);
-//        grafica.drawOval(100, 450, 150, 90);
-//
-//        //circulo relleno
-//        grafica.setColor(Color.CYAN);
-//        grafica.fillOval(250, 450, 150, 90);
-//
-//        //FUENTE
-//        Font fuente = new Font("Arial", Font.BOLD, 30);
-//
-//        grafica.setFont(fuente);
-//
-//        //texto y color
-//
-//        grafica.setColor(Color.RED);
-//        grafica.drawString("Maria Antonia", 250, 250);
-//
-//        //RGB
-//
-//        Color micolor = new Color(110, 84, 89);
-//        grafica.setColor(micolor);
-//
-//        grafica.fillRect(350, 330, 150, 60);
-//        grafica.setColor(micolor);
-//        grafica.setColor(Color.lightGray);
-//        grafica.drawString("ejemplo ", 370, 360);
-//
-//
-//        grafica.setColor(Color.black);
-//        grafica.drawString("0,0", 0, 50);
-//        grafica.drawString("0,0", 935, 650);
-
         grafica.setColor(micolor5);
         //ventana 1
         grafica.fillRect(98, 240, 9, 85);
@@ -155,9 +113,17 @@ public class PanelPaisaje extends JPanel {
         grafica.fillRect(168, 240, 9, 85);
         grafica.fillRect(148, 280, 55, 9);
 
-
+//letrero
         grafica.setColor(micolor3);
-        grafica.fillRoundRect(95, 340, 90, 35, 10, 10);
+        grafica.fillRoundRect(85, 340, 110, 35, 10, 10);
+
+        grafica.setColor(Color.BLACK);
+        Font fuente = new Font("Arial", Font.BOLD, 15);
+        grafica.setFont(fuente);
+
+        grafica.drawString("Maria x Yeymi", 87, 360);
+//Hasta aqui Mariaaa--------------------------------
+
 
         //GRAFICO CASA DEL LADO DERECHO-----------------------------------
 
