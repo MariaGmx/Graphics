@@ -251,6 +251,79 @@ public class PanelPaisaje extends JPanel {
         grafica.setColor(Color.BLACK);
         grafica.fillOval(713, 447, 5, 5);
 
+        // Maceta 1
+        grafica.setColor(Color.WHITE);
+        grafica.fillRect(638, 440, 21, 9);
+        grafica.setColor(Color.BLACK);
+        grafica.drawRect(638, 440, 21, 9);
+
+        grafica.setColor(Color.WHITE);
+        grafica.fillRect(634, 440, 28, 2);
+        grafica.setColor(Color.BLACK);
+        grafica.drawRect(634, 440, 28, 2);
+
+        grafica.setColor(micolor);
+        grafica.fillRect(648, 428, 2, 12);
+
+        grafica.setColor(micolor);
+        grafica.fillOval(649, 436, 2, 2);
+
+        grafica.setColor(micolor);
+        grafica.fillOval(647, 433, 2, 2);
+
+        grafica.setColor(micolor6);
+        grafica.fillOval(649, 428, 4, 4);
+
+        grafica.setColor(micolor6);
+        grafica.fillOval(650, 425, 4, 4);
+
+        grafica.setColor(micolor6);
+        grafica.fillOval(647, 423, 4, 4);
+
+        grafica.setColor(micolor6);
+        grafica.fillOval(644, 425, 4, 4);
+
+        grafica.setColor(micolor6);
+        grafica.fillOval(645, 428, 4, 4);
+
+        grafica.setColor(micolor0);
+        grafica.fillOval(647, 426, 4, 4);
+
+// Maceta 2
+        grafica.setColor(Color.WHITE);
+        grafica.fillRect(475, 441, 21, 9);
+        grafica.setColor(Color.BLACK);
+        grafica.drawRect(475, 441, 21, 9);
+
+        grafica.setColor(Color.WHITE);
+        grafica.fillRect(749, 441, 28, 2);
+        grafica.setColor(Color.BLACK);
+        grafica.drawRect(749, 441, 28, 2);
+
+        grafica.setColor(micolor);
+        grafica.fillRect(763, 429, 2, 12);
+
+        grafica.setColor(micolor);
+        grafica.fillOval(764, 437, 2, 2);
+
+        grafica.setColor(micolor);
+        grafica.fillOval(762, 434, 2, 2);
+
+        grafica.setColor(micolor);
+        grafica.fillOval(764, 429, 4, 4);
+
+        grafica.setColor(micolor6);
+        grafica.fillOval(765, 426, 4, 4);
+
+        grafica.setColor(micolor6);
+        grafica.fillOval(762, 424, 4, 4);
+
+        grafica.setColor(micolor6);
+        grafica.fillOval(759, 426, 4, 4);
+
+        grafica.setColor(micolor6);
+        grafica.fillOval(760, 429, 4, 4);
+
 
     }
 }
