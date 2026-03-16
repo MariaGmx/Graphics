@@ -85,7 +85,6 @@ public class PanelPaisaje extends JPanel {
         grafica.fillRoundRect(72, 157, 130, 64, 10, 10);
         grafica.fillRect(64, 63, 9, 77);
 
-
 //        //rectangulo
 //        grafica.setColor(Color.BLUE);
 //        grafica.drawRect(50, 100, 150, 160);
@@ -127,5 +126,35 @@ public class PanelPaisaje extends JPanel {
 //        grafica.setColor(Color.black);
 //        grafica.drawString("0,0", 0, 50);
 //        grafica.drawString("0,0", 935, 650);
+
+
+        //GRAFICO CASA DEL LADO DERECHO-----------------------------------
+
+        Color micolor5 = new Color(236, 86, 18);
+        grafica.setColor(micolor5);
+
+        grafica.setColor(micolor0);
+        // rectángulo relleno casa
+        grafica.fillRect(607, 51, 196, 438);
+
+        grafica.setColor(Color.BLACK);
+        grafica.drawRect(607, 51, 196, 438);
+
+        //Techo (un cuadrado y 2 triangulos)
+        grafica.setColor(micolor);
+        grafica.fillRect(600, 51, 199, 100);
+        int[] xPuntos = {801, 722, 872};
+        int[] yPuntos = {51, 151, 151};
+        grafica.fillPolygon(xPuntos, yPuntos, 3);
+        int[]xPunto = {600, 525, 675};
+        int[]yPunto = {50, 150, 150};
+        grafica.fillPolygon(xPunto, yPunto, 3);
+
+
+
+
+
+
+
     }
 }
