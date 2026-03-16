@@ -16,11 +16,15 @@ public class PanelPaisaje extends JPanel {
         grafica.setColor(Color.white);
 
         // Fondo cielo (azul) - de y=0 hasta y=270
-        grafica.setColor(Color.BLUE);
+        Color micolor7 = new Color(162, 202, 223);
+        grafica.setColor(micolor7);
+        grafica.setColor(micolor7);
         grafica.fillRect(0, 0, 1000, 270);
 
         // Fondo tierra (verde) - de y=270 hasta y=500
-        grafica.setColor(Color.GREEN);
+        Color micolor8 = new Color(123, 179, 105);
+        grafica.setColor(micolor8);
+        grafica.setColor(micolor8);
         grafica.fillRect(0, 270, 1000, 230);
 
 
@@ -339,7 +343,7 @@ public class PanelPaisaje extends JPanel {
         int[] yCarretera = {562, 270, 562};
         grafica.fillPolygon(xCarretera, yCarretera, 3);
 
-// Línea amarilla
+        // Línea amarilla
         grafica.setColor(Color.YELLOW);
         grafica.drawLine(423, 270, 423, 489);
 
