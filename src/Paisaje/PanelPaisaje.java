@@ -175,6 +175,81 @@ public class PanelPaisaje extends JPanel {
         grafica.setColor(Color.WHITE);
         grafica.fillRect(658, 203, 87, 3);
 
+        //ventaan del centro roja
+        grafica.setColor(micolor);
+        grafica.fillRect(637, 320, 137, 65);
+        grafica.setColor(Color.BLACK);
+        grafica.drawRect(637, 320, 137, 65);
+
+        grafica.setColor(micolor6);
+        grafica.fillRect(641, 323, 127, 56);
+        grafica.setColor(Color.BLACK);
+        grafica.drawRect(641, 323, 127, 56);
+
+        grafica.setColor(micolor);
+        grafica.fillRect(637, 351, 137, 3);
+        grafica.setColor(Color.BLACK);
+        grafica.drawRect(637, 351, 137, 3);
+
+        grafica.setColor(micolor);
+        grafica.fillRect(704, 320, 4, 65);
+        grafica.setColor(Color.BLACK);
+        grafica.drawRect(704, 320, 4, 65);
+
+        //ventanas cafe
+        // Ventana 1
+        grafica.setColor(micolor1);
+        grafica.fillOval(641, 247, 33, 32);
+        grafica.setColor(Color.BLACK);
+        grafica.drawOval(641, 247, 33, 32);
+
+        grafica.setColor(micolor1);
+        grafica.fillRect(641, 263, 33, 48);
+        grafica.setColor(Color.BLACK);
+        grafica.drawRect(641, 263, 33, 48);
+
+        grafica.setColor(Color.BLACK);
+        grafica.fillRect(656, 247, 2, 64);
+
+         // Ventana 2
+        grafica.setColor(micolor1);
+        grafica.fillOval(736, 247, 33, 32);
+        grafica.setColor(Color.BLACK);
+        grafica.drawOval(736, 247, 33, 32);
+
+        grafica.setColor(micolor1);
+        grafica.fillRect(736, 263, 33, 48);
+        grafica.setColor(Color.BLACK);
+        grafica.drawRect(736, 263, 33, 48);
+
+        grafica.setColor(Color.BLACK);
+        grafica.fillRect(751, 247, 2, 64);
+
+        // Puerta - capa base
+        grafica.setColor(Color.WHITE);
+        grafica.fillOval(681, 391, 49, 51);
+        grafica.setColor(Color.BLACK);
+        grafica.drawOval(681, 391, 49, 51);
+
+        grafica.setColor(Color.WHITE);
+        grafica.fillRect(681, 417, 49, 72);
+        grafica.setColor(Color.BLACK);
+        grafica.drawRect(681, 417, 49, 72);
+
+        grafica.setColor(micolor4);
+        grafica.fillOval(686, 395, 39, 40);
+        grafica.setColor(micolor4);
+        grafica.fillRect(686, 415, 39, 74);
+       // Líneas divisorias blancas
+        grafica.setColor(Color.WHITE);
+        grafica.fillRect(707, 392, 2, 97);
+        //chapa negra
+        grafica.setColor(Color.WHITE);
+        grafica.fillRect(701, 392, 2, 97);
+        grafica.setColor(Color.BLACK);
+        grafica.fillOval(692, 447, 5, 5);
+        grafica.setColor(Color.BLACK);
+        grafica.fillOval(713, 447, 5, 5);
 
 
     }
