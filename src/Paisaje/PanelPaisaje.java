@@ -11,11 +11,20 @@ public class PanelPaisaje extends JPanel {
     @Override
     protected void paintComponent(Graphics grafica) {
         super.paintComponent(grafica);
-//ponerle color al fondo
+
+        //ponerle color al fondo
         grafica.setColor(Color.white);
 
-// PRIMER EDIFICIO LADO IZQUIERDO---------------------------------------------------
+        // Fondo cielo (azul) - de y=0 hasta y=270
+        grafica.setColor(Color.BLUE);
+        grafica.fillRect(0, 0, 1000, 270);
 
+        // Fondo tierra (verde) - de y=270 hasta y=500
+        grafica.setColor(Color.GREEN);
+        grafica.fillRect(0, 270, 1000, 230);
+
+
+// PRIMER EDIFICIO LADO IZQUIERDO---------------------------------------------------
 
         //circulos del techo
         Color micolor0 = new Color(246, 153, 15);
@@ -291,9 +300,9 @@ public class PanelPaisaje extends JPanel {
 
 // Maceta 2
         grafica.setColor(Color.WHITE);
-        grafica.fillRect(475, 441, 21, 9);
+        grafica.fillRect(753, 441, 21, 9);
         grafica.setColor(Color.BLACK);
-        grafica.drawRect(475, 441, 21, 9);
+        grafica.drawRect(753, 441, 21, 9);
 
         grafica.setColor(Color.WHITE);
         grafica.fillRect(749, 441, 28, 2);
@@ -323,6 +332,16 @@ public class PanelPaisaje extends JPanel {
 
         grafica.setColor(micolor6);
         grafica.fillOval(760, 429, 4, 4);
+
+        // Carretera (triángulo)
+        grafica.setColor(new Color(119, 100, 100));
+        int[] xCarretera = {212, 423, 633};
+        int[] yCarretera = {562, 270, 562};
+        grafica.fillPolygon(xCarretera, yCarretera, 3);
+
+// Línea amarilla
+        grafica.setColor(Color.YELLOW);
+        grafica.drawLine(423, 270, 423, 489);
 
 
     }
