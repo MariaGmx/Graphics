@@ -11,11 +11,20 @@ public class PanelPaisaje extends JPanel {
     @Override
     protected void paintComponent(Graphics grafica) {
         super.paintComponent(grafica);
-//ponerle color al fondo
+
+        //ponerle color al fondo
         grafica.setColor(Color.white);
 
-// PRIMER EDIFICIO LADO IZQUIERDO---------------------------------------------------
+        // Fondo cielo (azul) - de y=0 hasta y=270
+        grafica.setColor(Color.BLUE);
+        grafica.fillRect(0, 0, 1000, 270);
 
+        // Fondo tierra (verde) - de y=270 hasta y=500
+        grafica.setColor(Color.GREEN);
+        grafica.fillRect(0, 270, 1000, 230);
+
+
+// PRIMER EDIFICIO LADO IZQUIERDO---------------------------------------------------
 
         //circulos del techo
         Color micolor0 = new Color(246, 153, 15);
@@ -250,6 +259,89 @@ public class PanelPaisaje extends JPanel {
         grafica.fillOval(692, 447, 5, 5);
         grafica.setColor(Color.BLACK);
         grafica.fillOval(713, 447, 5, 5);
+
+        // Maceta 1
+        grafica.setColor(Color.WHITE);
+        grafica.fillRect(638, 440, 21, 9);
+        grafica.setColor(Color.BLACK);
+        grafica.drawRect(638, 440, 21, 9);
+
+        grafica.setColor(Color.WHITE);
+        grafica.fillRect(634, 440, 28, 2);
+        grafica.setColor(Color.BLACK);
+        grafica.drawRect(634, 440, 28, 2);
+
+        grafica.setColor(micolor);
+        grafica.fillRect(648, 428, 2, 12);
+
+        grafica.setColor(micolor);
+        grafica.fillOval(649, 436, 2, 2);
+
+        grafica.setColor(micolor);
+        grafica.fillOval(647, 433, 2, 2);
+
+        grafica.setColor(micolor6);
+        grafica.fillOval(649, 428, 4, 4);
+
+        grafica.setColor(micolor6);
+        grafica.fillOval(650, 425, 4, 4);
+
+        grafica.setColor(micolor6);
+        grafica.fillOval(647, 423, 4, 4);
+
+        grafica.setColor(micolor6);
+        grafica.fillOval(644, 425, 4, 4);
+
+        grafica.setColor(micolor6);
+        grafica.fillOval(645, 428, 4, 4);
+
+        grafica.setColor(micolor0);
+        grafica.fillOval(647, 426, 4, 4);
+
+// Maceta 2
+        grafica.setColor(Color.WHITE);
+        grafica.fillRect(753, 441, 21, 9);
+        grafica.setColor(Color.BLACK);
+        grafica.drawRect(753, 441, 21, 9);
+
+        grafica.setColor(Color.WHITE);
+        grafica.fillRect(749, 441, 28, 2);
+        grafica.setColor(Color.BLACK);
+        grafica.drawRect(749, 441, 28, 2);
+
+        grafica.setColor(micolor);
+        grafica.fillRect(763, 429, 2, 12);
+
+        grafica.setColor(micolor);
+        grafica.fillOval(764, 437, 2, 2);
+
+        grafica.setColor(micolor);
+        grafica.fillOval(762, 434, 2, 2);
+
+        grafica.setColor(micolor);
+        grafica.fillOval(764, 429, 4, 4);
+
+        grafica.setColor(micolor6);
+        grafica.fillOval(765, 426, 4, 4);
+
+        grafica.setColor(micolor6);
+        grafica.fillOval(762, 424, 4, 4);
+
+        grafica.setColor(micolor6);
+        grafica.fillOval(759, 426, 4, 4);
+
+        grafica.setColor(micolor6);
+        grafica.fillOval(760, 429, 4, 4);
+
+        // Carretera (triángulo)
+        grafica.setColor(new Color(119, 100, 100));
+        int[] xCarretera = {212, 423, 633};
+        int[] yCarretera = {562, 270, 562};
+        grafica.fillPolygon(xCarretera, yCarretera, 3);
+
+// Línea amarilla
+        grafica.setColor(Color.YELLOW);
+        grafica.drawLine(423, 270, 423, 489);
 
 
     }
