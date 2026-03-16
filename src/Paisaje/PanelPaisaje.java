@@ -181,6 +181,35 @@ public class PanelPaisaje extends JPanel {
         int[] yPunto = {50, 150, 150};
         grafica.fillPolygon(xPunto, yPunto, 3);
 
+        // Ventana 1 techo
+        grafica.setColor(micolor6);
+        grafica.fillRect(620, 93, 47, 29);
+        grafica.setColor(Color.BLACK);
+        grafica.drawRect(620, 93, 47, 29);
+        grafica.setColor(Color.BLACK);
+        grafica.drawLine(620, 108, 667, 108);//linea de la mitad
+
+        // ventana 2 techo
+        grafica.setColor(micolor6);
+        grafica.fillRect(733, 93, 47, 29);
+        grafica.setColor(Color.BLACK);
+        grafica.drawRect(733, 93, 47, 29);
+        grafica.drawLine(733, 108, 780, 108);//linea de la mitad
+
+        // ventana circular
+
+        grafica.setColor(Color.WHITE);
+        grafica.fillOval(657, 174, 89, 61);//circulo blanco
+        grafica.setColor(micolor4);
+        grafica.fillOval(665, 178, 72, 52);//circulo lila
+
+        grafica.setColor(Color.WHITE);
+        grafica.fillRect(699, 174, 5, 61); //marco blanco
+
+        grafica.setColor(Color.WHITE);
+        grafica.fillRect(658, 203, 87, 3);
+
+
 
     }
 }
