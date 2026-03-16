@@ -60,6 +60,9 @@ public class PanelPaisaje extends JPanel {
 
         //semicirculo principal ventana
         grafica.fillArc(50, 51, 172, 170, 0, 180);
+
+        grafica.setColor(Color.BLACK);
+        grafica.drawArc(50, 51, 172, 170, 0, 180);
         Color micolor2 = new Color(218, 149, 206);
 
         //semicirculo interior
@@ -76,14 +79,31 @@ public class PanelPaisaje extends JPanel {
         //ventana debajo de la ventana principal
         Color micolor3 = new Color(226, 151, 210);
         grafica.setColor(micolor3);
-        grafica.drawRoundRect(65, 150, 143, 77, 10, 10);
-        grafica.fillRoundRect(65, 150, 143, 77, 10, 10);
 
+        grafica.fillRoundRect(65, 150, 143, 77, 10, 10);
+        grafica.setColor(Color.BLACK);
+        grafica.drawRoundRect(65, 150, 143, 77, 10, 10);
         //interior de la segunda ventana
         Color micolor4 = new Color(165, 156, 216);
         grafica.setColor(micolor4);
         grafica.fillRoundRect(72, 157, 130, 64, 10, 10);
-        grafica.fillRect(64, 63, 9, 77);
+
+        grafica.setColor(micolor3);
+        grafica.fillRect(131, 150, 9, 78);
+        grafica.fillRect(70, 185, 135, 9);
+//ventanas grandes
+
+        Color micolor5 = new Color(122, 88, 50);
+        grafica.setColor(micolor5);
+        //ventana 1
+        grafica.fillRoundRect(70, 240, 65, 85, 10, 10);
+        //ventana 2
+        grafica.fillRoundRect(140, 240, 65, 85, 10, 10);
+
+        grafica.setColor(micolor0);
+        grafica.fillRoundRect(78, 245, 50, 75, 10, 10);
+        grafica.fillRoundRect(148, 245, 50, 75, 10, 10);
+
 
 //        //rectangulo
 //        grafica.setColor(Color.BLUE);
@@ -127,11 +147,22 @@ public class PanelPaisaje extends JPanel {
 //        grafica.drawString("0,0", 0, 50);
 //        grafica.drawString("0,0", 935, 650);
 
+        grafica.setColor(micolor5);
+        //ventana 1
+        grafica.fillRect(98, 240, 9, 85);
+        grafica.fillRect(75, 280, 60, 9);
+        //ventana 2
+        grafica.fillRect(168, 240, 9, 85);
+        grafica.fillRect(148, 280, 55, 9);
+
+
+        grafica.setColor(micolor3);
+        grafica.fillRoundRect(95, 340, 90, 35, 10, 10);
 
         //GRAFICO CASA DEL LADO DERECHO-----------------------------------
 
-        Color micolor5 = new Color(236, 86, 18);
-        grafica.setColor(micolor5);
+        Color micolor6 = new Color(236, 86, 18);
+        grafica.setColor(micolor6);
 
         grafica.setColor(micolor0);
         // rectángulo relleno casa
@@ -146,14 +177,9 @@ public class PanelPaisaje extends JPanel {
         int[] xPuntos = {801, 722, 872};
         int[] yPuntos = {51, 151, 151};
         grafica.fillPolygon(xPuntos, yPuntos, 3);
-        int[]xPunto = {600, 525, 675};
-        int[]yPunto = {50, 150, 150};
+        int[] xPunto = {600, 525, 675};
+        int[] yPunto = {50, 150, 150};
         grafica.fillPolygon(xPunto, yPunto, 3);
-
-
-
-
-
 
 
     }
