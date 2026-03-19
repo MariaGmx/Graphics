@@ -153,12 +153,25 @@ public class PanelPaisaje extends JPanel {
         //Techo (un cuadrado y 2 triangulos)
         grafica.setColor(micolor);
         grafica.fillRect(600, 51, 199, 100);
+
+// borde del rectángulo
+        grafica.setColor(Color.black);
+        grafica.drawRect(600, 51, 199, 100);
+
+        grafica.setColor(micolor);
         int[] xPuntos = {801, 722, 872};
         int[] yPuntos = {51, 151, 151};
         grafica.fillPolygon(xPuntos, yPuntos, 3);
+
+        grafica.setColor(Color.black);
+        grafica.drawPolygon(xPuntos, yPuntos, 3);
+        grafica.setColor(micolor);
         int[] xPunto = {600, 525, 675};
         int[] yPunto = {50, 150, 150};
         grafica.fillPolygon(xPunto, yPunto, 3);
+
+        grafica.setColor(Color.black);
+        grafica.drawPolygon(xPunto, yPunto, 3);
 
         // Ventana 1 techo
         grafica.setColor(micolor6);
@@ -224,7 +237,7 @@ public class PanelPaisaje extends JPanel {
         grafica.setColor(Color.BLACK);
         grafica.fillRect(656, 247, 2, 64);
 
-         // Ventana 2
+        // Ventana 2
         grafica.setColor(micolor1);
         grafica.fillOval(736, 247, 33, 32);
         grafica.setColor(Color.BLACK);
@@ -253,7 +266,7 @@ public class PanelPaisaje extends JPanel {
         grafica.fillOval(686, 395, 39, 40);
         grafica.setColor(micolor4);
         grafica.fillRect(686, 415, 39, 74);
-       // Líneas divisorias blancas
+        // Líneas divisorias blancas
         grafica.setColor(Color.WHITE);
         grafica.fillRect(707, 392, 2, 97);
         //chapa negra
